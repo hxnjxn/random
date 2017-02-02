@@ -1,0 +1,36 @@
+set nocompatible  " required
+filetype off " required
+
+" vundle initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" vundle manage vundle
+
+" plugins must be added before the following
+call vundle#end()
+filetype plugin indent on
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+set splitbelow
+
+" split navigation
+ nnoremap <C-J> <C-W><C-J>
+ nnoremap <C-K> <C-W><C-K>
+
+au BufNewFile,BufRead *.py
+        \ set tabstop=4
+        \ set softtabstop=4
+        \ set shiftwidth=4
+        \ set textwidth=79
+        \ set expandtab
+        \ set autoindent
+        \ set fileformat=unix

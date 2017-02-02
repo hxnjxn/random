@@ -1,0 +1,25 @@
+# References File: git
+
+mkdir github_project_folder
+cd github_project_folder
+
+git init - Initialize an empty git or re-initialize an existing project
+git remote add origin https://github.com/username/myproject.git - Add remote git repo location
+git remote -v - View remote git repo location
+git status - See status of what files have yet to be commit, any changes, current branch
+git add <FILE> - Add file to git repo
+git commit -m “Changes made in this commit"
+git push - Push all commits
+git rebase - Update your local repo 
+
+Online guides: http://rogerdudler.github.io/git-guide/
+
+Git Manual: http://git-scm.com/book/en/v2
+
+Video Git: https://www.youtube.com/watch?v=8oRjP8yj2Wo&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH
+
+Initial Setup:
+
+git config --global user.name <username>
+git config --global user.email <email>
+git config --global core.editor [nano|emacs|vim]
